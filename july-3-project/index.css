@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-image div img{
+    width: 100vw;
+    height: 600px;
+}
+.my-button{
+    padding: 8px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    width: 150px;
+    border-radius: 10px !important;
+}
+
+.grid-container {
+    display: grid;
+    justify-content:center;
+    grid-template-columns:repeat(3,350px);
+    grid-template-rows: repeat(3,300px);
+    gap: 10px;
+}
+.grid-item>img{
+    width: 350px;
+    height: 300px;
+}
+.grid-item-1{
+ background: #d33c3c;
+ grid-row: 1/3;
+ 
+}
+.grid-item-1>img{
+    width: 350px;
+    height: 610px;
+}
+.grid-item-2{
+    background: #3cd387;
+}
+
+.grid-item-3{
+    background: #92da0d;
+}
+.grid-item-4{
+    background: #1f0699;
+}
+
+.grid-item-5{
+    background: #f512da;
+ }
+ .grid-item-6{
+    background: #013b20;
+}
+.grid-item-7{
+    background: #0479ff;
+    grid-column: 2/-1;
+}
+.grid-item-7>img{
+    width: 710px;
+    height: 300px;
+}
+
+.card-main{
+ margin: 15px 0 15px 0;
+}
+.my-card>img{
+    height: 30vh;
+}
+.footer{
+    margin-top: 50px;
+    height: 246px;
+}
+.footer-buttom{
+    margin: 0 5vw 0 10vw;
+}
+tr>th{
+    text-align: left;
+    padding: 10px 0 10px 0;
+    text-transform: capitalize;
+}
+tr>td{
+    text-transform: capitalize;
+    padding: 2px 0 2px 0;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .card-main{
+        flex-wrap: wrap;
+    }
+    .my-card{
+        margin: 10px;
+    }
+    .grid-container {
+        grid-template-columns:repeat(3,300px);
+        grid-template-rows: repeat(3,200px);
+        gap: 10px;
+    }
+    .grid-item>img{
+        width: 300px;
+        height: 200px;
+    }
+    .grid-item-1>img{
+        width: 300px;
+        height: 410px;
+    }
+    .grid-item-7>img{
+        width: 610px;
+        height: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 770px) {
+    .carousel-image div img{
+        width: 100vw;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .my-button{
+        /* width: 100px; */
+    }
+}
